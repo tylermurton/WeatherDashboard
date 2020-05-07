@@ -223,6 +223,7 @@ initialize();
 $('#clear').click(function() {
     $("#pastSearches").html("");
     localStorage.clear();
+    location.reload();
 })
 
 $('input').keypress(function (e) {
