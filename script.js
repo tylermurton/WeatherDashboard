@@ -50,7 +50,7 @@ function error() {
 
 function showPrevious() {
     if (savedLocations) {
-        $('#pastSearches').empty();
+        $("#pastSearches").empty();
         var btns = $("<div>").attr("class", "list-group");
         for (var i = 0; i < savedLocations.length; i++) {
             var locBtn = $("<a>").attr("href", "#").attr("id", "loc-btn").text(savedLocations[i]);
@@ -61,7 +61,7 @@ function showPrevious() {
             }
             btns.prepend(locBtn);
         }
-        $('#pastSearches').append(btns);
+        $("#pastSearches").append(btns);
     }
 }
 
@@ -213,7 +213,7 @@ $("#searchbtn").on("click", function () {
 
 $(document).on("click", "#loc-btn", function () {
     clear();
-    currentLoc = $(this).text();
+    currentLocation = $(this).text();
     showPrevious();
     getCurrent(currentLocation);
 });
