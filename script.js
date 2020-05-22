@@ -235,5 +235,6 @@ $('input').keypress(function (e) {
        $(this).removeAttr("disabled"); //you can type again if you want though
      }
     });
+    
 
 });
